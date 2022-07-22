@@ -14,6 +14,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { FormatAlignJustify } from "@mui/icons-material";
 
 export default function SimpleContainer() {
   const [country, setCountry] = useState("TR")
@@ -39,7 +40,7 @@ const handleSubmit = (e) => {
     <Container maxWidth="md" sx={{ marginTop: "1rem" }}>
       <CssBaseline />
       <Box
-        sx={{ bgcolor: "#A1A2A6", height: "20vh", padding: "1rem", color:"#F0F0F2" }}
+        sx={{ bgcolor: "#3AB4F2", height: "20vh", padding: "2rem", color:"#3AB4F2" }}
         component="form" onSubmit={handleSubmit}
       >
         <TextField
@@ -61,7 +62,7 @@ const handleSubmit = (e) => {
           sx={{marginLeft:"20px", marginRight:"20px"}}
           onChange={(e) => setYear(e.target.value)}
         />
-      <Button variant="standard" type="submit" sx={{border:"1px solid #3B3C40", marginTop:"10px", color:"#F0F0F2", "&:hover":{background:'#6E6F73'}}} >Search</Button>
+      <Button variant="standard" type="submit" sx={{border:"1px solid #3B3C40", marginTop:"10px", color:"#F0F0F2", "&:hover":{background:'#0078AA'}}} >Search</Button>
       </Box>
       <Box>
         <Typography variant="h3" component="h3" align="center">
@@ -93,7 +94,7 @@ const handleSubmit = (e) => {
               key={urlid}
               sx={{backgroundColor:
                 index % 2 
-                    ? "#A1A2A6"
+                    ? "#0078AA"
                     : "#F0F0F2",}}
             >
               <TableCell component="th" scope="row">
