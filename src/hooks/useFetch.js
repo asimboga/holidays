@@ -2,17 +2,17 @@ import axios from 'axios';
 import {useState} from 'react'
 
 const useFetch = () => {
-  const [askin, setAskin] = useState([]);
+  const [day, setday] = useState([]);
   const [loading, setLoading] = useState(false)
-
+console.log(day);
   const getData = async(url) => {
     setLoading(true)
     const {data} = await axios.get(url)
-    setAskin(data.response.holidays)
+    setday(data.response.holidays)
     setLoading(false)
   }
 
-  return [askin, loading, getData]
+  return [day, loading, getData]
 }
 
 export default useFetch

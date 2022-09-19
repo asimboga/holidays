@@ -14,7 +14,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-// import { FormatAlignJustify } from "@mui/icons-material";
 
 export default function SimpleContainer() {
   const [country, setCountry] = useState("TR")
@@ -72,7 +71,6 @@ const handleSubmit = (e) => {
           Holidays for {country.toUpperCase()}
         </Typography>
         <Typography sx={{textAlign:"center"}}>
-        {/* <img src={flag?.filter((c) => c.altSpellings[0] === country.toUpperCase())[0]?.flags.png} alt="" /> */}
         </Typography>
         <Grid container>
                 <TableContainer component={Paper}>
